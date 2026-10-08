@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Holy SaaS — software simples para pequenos negócios</title>
+  <meta name="description" content="Holy SaaS cria sistemas na nuvem para pequenas e médias empresas: LeRuban, para quem produz e vende sob encomenda, e Oname, para escritórios que atendem clientes." />
+  <meta property="og:title" content="Holy SaaS" />
+  <meta property="og:description" content="Software simples, seguro e feito no Brasil para pequenos negócios." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --bg: #12141a;
+      --surface: #1b1e27;
+      --line: #2c303c;
+      --text: #eef0f5;
+      --muted: #a3a9b8;
+      --accent: #e8c56d;
+      --accent-2: #8fb3ff;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232,197,109,.12), transparent 70%);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+    header { padding: 24px 0; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .marca { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.15rem; text-decoration: none; letter-spacing: -.01em; }
+    .marca svg { width: 30px; height: 30px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: .95rem; }
+    nav a:hover { color: var(--text); }
+
+    .hero { padding: 72px 0 56px; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.12; letter-spacing: -.025em; max-width: 780px; margin: 0 auto 20px; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero p { color: var(--muted); font-size: 1.15rem; max-width: 620px; margin: 0 auto 32px; }
+    .botao { display: inline-block; padding: 13px 26px; border-radius: 999px; background: var(--accent); color: #1a1408; font-weight: 600; text-decoration: none; transition: transform .15s; }
+    .botao:hover { transform: translateY(-1px); }
+    .botao:focus-visible, nav a:focus-visible, .produto a:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
+
+    section { padding: 56px 0; }
+    h2 { font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -.02em; margin-bottom: 8px; }
+    .sub { color: var(--muted); margin-bottom: 32px; }
+
+    .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .produto { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; }
+    .produto .tag { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent-2); margin-bottom: 10px; }
+    .produto h3 { font-size: 1.5rem; margin-bottom: 8px; }
+    .produto p { color: var(--muted); margin-bottom: 16px; }
+    .produto ul { list-style: none; margin-bottom: 24px; flex: 1; }
+    .produto li { padding-left: 22px; position: relative; margin-bottom: 6px; }
+    .produto li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .produto a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .produto a:hover { text-decoration: underline; }
+
+    .pilares { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .pilar { border-top: 2px solid var(--line); padding-top: 18px; }
+    .pilar h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .pilar p { color: var(--muted); font-size: .95rem; }
+
+    .contato { text-align: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 48px 24px; }
+    .contato p { color: var(--muted); margin: 0 auto 24px; max-width: 520px; }
+
+    footer { padding: 40px 0; color: var(--muted); font-size: .85rem; text-align: center; }
+
+    @media (max-width: 560px) {
+      nav { display: none; }
+      .hero { padding: 48px 0 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="marca" href="#" aria-label="Holy SaaS, início">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="7" rx="9" ry="3" fill="none" stroke="#e8c56d" stroke-width="2"/><rect x="7" y="13" width="18" height="15" rx="4" fill="#8fb3ff"/></svg>
+        Holy SaaS
+      </a>
+      <nav aria-label="Seções">
+        <a href="#produtos">Produtos</a>
+        <a href="#como">Como trabalhamos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <h1>Software simples para quem <em>toca o próprio negócio</em>.</h1>
+      <p>A Holy SaaS cria sistemas na nuvem para pequenas e médias empresas: cada um feito para um tipo de negócio, sem instalação e sem planilha perdida.</p>
+      <a class="botao" href="#produtos">Conheça os produtos</a>
+    </div>
+
+    <section id="produtos">
+      <div class="wrap">
+        <h2>Nossos produtos</h2>
+        <p class="sub">Cada produto resolve bem um problema, em vez de tentar resolver tudo.</p>
+        <div class="produtos">
+          <article class="produto">
+            <span class="tag">Para quem produz e vende sob encomenda</span>
+            <h3>LeRuban</h3>
+            <p>Pedidos, estoque, entregas e financeiro num só lugar.</p>
+            <ul>
+              <li>Encomendas em quadro, do orçamento à entrega</li>
+              <li>Estoque de insumos baixado pela produção</li>
+              <li>Faturamento, DRE e fluxo de caixa</li>
+            </ul>
+            <a href="https://leruban.com.br">Conhecer o LeRuban →</a>
+          </article>
+          <article class="produto">
+            <span class="tag">Para escritórios que atendem clientes</span>
+            <h3>Oname</h3>
+            <p>Gestão de clientes, documentos e honorários para escritórios.</p>
+            <ul>
+              <li>Cadastro de clientes e documentos solicitados</li>
+              <li>Registro das orientações dadas a cada cliente</li>
+              <li>Honorários, parcelas e indicadores de faturamento</li>
+            </ul>
+            <a href="https://wa.me/5548996929811?text=Ol%C3%A1!%20Quero%20conhecer%20o%20Oname.">Falar sobre o Oname →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como">
+      <div class="wrap">
+        <h2>Como trabalhamos</h2>
+        <p class="sub">O mesmo cuidado em todos os produtos.</p>
+        <div class="pilares">
+          <div class="pilar"><h3>Seus dados isolados</h3><p>Cada empresa só enxerga os próprios dados, nunca os de outra.</p></div>
+          <div class="pilar"><h3>Papéis por pessoa</h3><p>Cada pessoa da equipe vê e faz só o que o papel dela permite.</p></div>
+          <div class="pilar"><h3>Cópia de segurança</h3><p>Seus dados ficam guardados com cópia de segurança e podem ser recuperados.</p></div>
+          <div class="pilar"><h3>LGPD desde o início</h3><p>Exportação completa dos seus dados e exclusão quando você encerrar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="wrap">
+        <div class="contato">
+          <h2>Vamos conversar?</h2>
+          <p>Conte como funciona o seu negócio e a gente mostra qual produto encaixa melhor.</p>
+          <a class="botao" href="https://wa.me/5548996929811?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Holy%20SaaS.">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Holy SaaS. Feito no Brasil.</div>
+  </footer>
+</body>
+</html>
